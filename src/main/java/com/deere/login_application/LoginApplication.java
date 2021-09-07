@@ -24,6 +24,8 @@ public class LoginApplication {
         UserService userService = new UserService();
         String message = userService.create(userName, password);
         System.out.println(message);
+
+
     }
 
 }
