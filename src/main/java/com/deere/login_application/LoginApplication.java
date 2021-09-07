@@ -25,6 +25,18 @@ public class LoginApplication {
         String message = userService.create(userName, password);
         System.out.println(message);
 
+        System.out.println("Try logging in");
+        System.out.println("Enter username : ");
+        String userName1 = sc.next();
+
+        System.out.println("Enter Password : ");
+        String password1 = sc.next();
+
+        LoginService loginService = new LoginService();
+        String loginMessage = loginService.login(userName1, password1);
+        System.out.println(loginMessage);
+
+
 
     }
 
