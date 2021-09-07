@@ -11,7 +11,7 @@ public class UserService {
 
     static List<User> userList = new ArrayList<>();
 
-    public List<User> getUserList() {
+    static public List<User> getUserList() {
         return userList;
     }
 

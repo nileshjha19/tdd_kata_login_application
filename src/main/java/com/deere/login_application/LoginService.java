@@ -16,6 +16,7 @@ public class LoginService {
         if(password.isEmpty())
             return "Login failed. Password is empty";
 
+        List<User>userList = UserService.getUserList();
         userList.forEach((user) -> System.out.println(user.getUserName() + "" + user.getPassword()));
         if(!(userList.stream().anyMatch(user -> user.getUserName().equals(userName)))) {
             message = "Login failed. Username is invalid";
